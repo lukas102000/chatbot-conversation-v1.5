@@ -111,7 +111,7 @@ const get_conversation = (user,bot)=>{
 const btn_sender = (text)=>{
     var box = document.querySelector(".containt-message")
     var bot_div = document.createElement("div")
-    var btn = document.createElement("button")
+    var btn = document.createElement("label")
     
     bot_div.className = "bot_div"
     btn.className = "btn_sender"

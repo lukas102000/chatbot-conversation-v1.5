@@ -63,7 +63,7 @@ function save_name(){
     
     inp.setAttribute("id", "idname")
     inp.className = "inp-res"
-    var btn = document.createElement("button")
+    var btn = document.createElement("label")
 
     btn.className = "btn-res"
     btn.innerHTML = "Enviar"
@@ -93,7 +93,7 @@ function save_pais(){
     
     inp.setAttribute("id", "idpais")
     inp.className = "inp-res"
-    var btn = document.createElement("button")
+    var btn = document.createElement("label")
 
     btn.className = "btn-res"
     btn.innerHTML = "Enviar"
@@ -122,7 +122,7 @@ function save_cidade(){
     var logo = "<img src='./asset/img/log.png'  height='50px'>"
     inp.setAttribute("id", "idcidade")
     inp.className = "inp-res"
-    var btn = document.createElement("button")
+    var btn = document.createElement("label")
     btn.className = "btn-res"
     btn.innerHTML = "Enviar"
 
@@ -148,7 +148,7 @@ function save_sTaxi(){
     var logo = "<img src='./asset/img/log.png'  height='50px'>"
     inp.setAttribute("id", "idTaxi")
     inp.className = "inp-res"
-    var btn = document.createElement("button")
+    var btn = document.createElement("label")
     btn.className = "btn-res"
     btn.innerHTML = "Enviar"
     document.getElementById("sendBtn").style.display = "none"
@@ -173,7 +173,7 @@ function save_STV(){
     var logo = "<img src='./asset/img/log.png'  height='50px'>"
     inp.setAttribute("id", "idsTV")
     inp.className = "inp-res"
-    var btn = document.createElement("button")
+    var btn = document.createElement("label")
     btn.className = "btn-res"
     btn.innerHTML = "Enviar"
     document.getElementById("sendBtn").style.display = "none"
@@ -198,7 +198,7 @@ function save_series(){
     var logo = "<img src='./asset/img/log.png'  height='50px'>"
     inp.setAttribute("id", "idseries")
     inp.className = "inp-res"
-    var btn = document.createElement("button")
+    var btn = document.createElement("label")
     btn.className = "btn-res"
     btn.innerHTML = "Enviar"
     document.getElementById("sendBtn").style.display = "none"
@@ -223,7 +223,7 @@ function save_shoping(){
     var logo = "<img src='./asset/img/log.png'  height='50px'>"
     inp.setAttribute("id", "idshoping")
     inp.className = "inp-res"
-    var btn = document.createElement("button")
+    var btn = document.createElement("label")
     btn.className = "btn-res"
     btn.innerHTML = "Enviar"
     document.getElementById("sendBtn").style.display = "none"
