@@ -21,7 +21,7 @@ body{
     background-color: #fff;
     border-radius: 2px;
     position: absolute;
-    animation: loading 2s infinite;
+    animation: loading 2s linear;
 }
 @keyframes loading {
     10%{

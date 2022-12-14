@@ -19,7 +19,7 @@ body{
     background-color: rgb(255, 255, 255);
     border-radius: 2px;
     position: absolute;
-    animation: loading 2s infinite;
+    animation: loading 2s linear;
 }
 @keyframes loading {
     10%{
