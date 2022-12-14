@@ -1,0 +1,240 @@
+body{
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+}
+.loading{
+    width: 100%;
+    height: 4rem;
+    padding-top: 3px;
+    display: block;
+    overflow: hidden;
+    background-color: rgba(58, 9, 155, 0.96);
+    position: fixed;
+}
+.loading>div{
+    margin-left: 7px;
+    width: 0px;
+    height: 0.3rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2px;
+    position: absolute;
+    animation: loading 2s infinite;
+}
+@keyframes loading {
+    10%{
+        width: 10%;
+    }
+    20%{
+        width: 20%;
+    }
+    30%{
+        width: 30%;
+    }
+    40%{
+        width: 40%;
+    }
+    50%{
+        width: 50%;
+    }
+    60%{
+        width: 60%;
+    }
+    70%{
+        width: 70%;
+    }
+    80%{
+        width: 80%;
+    }
+    90%{
+        width: 90%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+.container{
+    width: 100%;
+    justify-content: center;
+
+    display: flex;
+}
+.body-container{
+    width: 100%;
+    height: 90vh;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.96);
+    border-radius: 10px;
+}
+.loading li{
+    margin-top:9px ;
+    width: 100%;
+    height: 2rem;
+    border-radius: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+.loading li img{
+    margin: 5px;
+}
+.loading li label{
+    margin: 5px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.containt-message{
+    width: 85%;
+    height: 80vh;
+    margin-bottom: 20px;
+    padding: 10px;
+    overflow: auto;
+    padding: 1rem;
+    margin-top: 10px;
+    padding-bottom: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    overflow-inline: 10px;
+}
+.containt-message::-webkit-scrollbar{
+    width: 0;
+}
+.containt-ele{
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.containt-ele img{
+    filter: brightness(40%);
+    cursor: pointer;
+}
+.containt-ele img:hover{
+    filter: brightness(30%);
+}
+.containt-ele textarea{
+    border: 0;
+    width: 60vw;
+    border-radius: 10px;
+    height: 3rem;
+    background-color: rgba(170, 170, 170, 0.645);
+}
+.containt-ele button{
+    border: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid rgb(228, 228, 228);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.containt-ele button img{
+    filter: brightness(100%);
+}
+.boxSms{
+    background-color: rgba(58, 9, 155, 0.96);
+    align-self: flex-end;
+    width: max-content;
+    margin: 5px;
+    padding: 10px;
+    display: block;
+    max-width: 70%;
+    border-radius: 20px 0px 0px 0px ; 
+    text-align: end;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.box_div{
+    display: block;
+    max-width: max-content;
+}
+.box_div .bot_div{
+    background-color: rgba(224, 224, 224, 0.96);
+    align-self: flex-start;
+    width: max-content;
+    margin: 5px;
+    margin-left: 2rem;
+    padding: 10px;
+    display: block;
+    max-width: 70%;
+    border-radius: 0px 20px 1px 0px ;
+    text-align: start;
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.btn_sender{
+    max-width: 200px;
+    border: 0;
+    font-size: 13pt;
+    padding: 5px;
+    margin: 5px;
+    background-color: rgba(58, 9, 155, 0.96);
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+}
+.inp-res{
+    width: 50vw;
+    height: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    background-color: rgb(238, 236, 236);
+    font-size: 12pt;
+}
+.btn-res{
+    width: 20vw;
+    margin: 5px;
+    height: 3rem;
+    padding: 10px;
+    border: 0;
+    border-radius: 10px;
+    background-color: rgba(58, 9, 155, 0.96);
+    color: #fff;
+    font-size: 12pt;
+}
+.emoji-show{
+    display: none;
+    transition: 0.5s;
+}
+.emoji-show.active{
+    width: 80vw;
+    height: 4rem;
+    background-color: rgba(224, 223, 224, 0.671);
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    transition: 0.5s;
+    padding: 10px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.emoji-show img{
+    margin: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+    transform: rotate(-100deg);
+    animation: mover 2s infinite;
+}
+.boxSms img{
+    transition: 0.5s;
+    transform: rotate(-50deg);
+    animation: mover2 2s infinite;
+}
+@keyframes mover {
+    50%{
+        transform: rotate(100deg);
+    }
+}
+@keyframes mover2 {
+    50%{
+        transform: rotate(50deg);
+    }
+}
