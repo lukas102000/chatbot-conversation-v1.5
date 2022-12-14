@@ -20,7 +20,7 @@
         background-color: rgb(255, 255, 255);
         border-radius: 2px;
         position: absolute;
-        animation: loading 2s linear;
+        animation: loading 2s infinite;
     }
     @keyframes loading {
         10%{
@@ -261,7 +261,7 @@
         background-color: rgb(255, 255, 255);
         border-radius: 2px;
         position: absolute;
-        animation: loading 2s linear;
+        animation: loading 2s infinite;
     }
     @keyframes loading {
         10%{
