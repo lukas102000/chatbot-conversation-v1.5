@@ -44,7 +44,9 @@ const get_conversation = (user,bot)=>{
         "e qual é a tua cidade?",
         "bem "+localStorage.getItem("name")+", tens filhos?",
         "muito bem "+localStorage.getItem("name")+", Tu gostas de um animal doméstico?",
-        "Qual é a tua situação actual?, trabalhas ou estudante!",        
+        "Qual é a tua situação actual?, trabalhas ou estudante!",  
+        "Como é conseguir um emprego na cidade de "+localStorage.getItem("cidade")+"?",
+        "Quais das áreas que mais emprega as pessoas na cidade de "+localStorage.getItem("cidade")+"?",      
         "Quais são os serviços de táxis há na cidade de "+localStorage.getItem("cidade")+" ?",
         "Gostas de séries? "+localStorage.getItem("name"),
         "incrível "+localStorage.getItem("name")+". Qual é a tua séries favorita? "+localStorage.getItem("name"),
@@ -62,15 +64,14 @@ const get_conversation = (user,bot)=>{
         "Quantos gastou este més usando o "+localStorage.getItem("sTaxi"),
         "Quais dos serviços de táxis que realizou uma publicidade este més?"+ localStorage.getItem("sTaxi")+" ?",
 
-        "Se um amigo quer chegar na cidade de "+localStorage.getItem("país")+", em que hótel ficaria? de tua preferência?",
+        "Se um amigo quer chegar na cidade de "+localStorage.getItem("cidade")+", em que hótel ficaria? de tua preferência?",
 
-        "quantos gastas para pagamentos mensal da "+localStorage.getItem("sTV"),
-        "Quais dos canais mais adorada por ti na "+localStorage.getItem("sTV"),
-        "Qual das personagens que gostas na série de "+localStorage.getItem("serie"),
-        
-        "Como é conseguir um emprego na cidade de "+localStorage.getItem("cidade"),
-        "Quais das áreas que mais emprega as pessoas na cidade de "+localStorage.getItem("cidade"),
-        
+        "quantos gastas para pagamentos mensal da "+localStorage.getItem("sTV")+"?",
+        "Quais dos canais mais adorada por ti na "+localStorage.getItem("sTV")+"?",
+        "Qual das personagens que gostas na série de "+localStorage.getItem("serie")+"?",
+        "E por que gostas do autor "+localStorage.getItem("seriw")+"?",
+        "Já assistiu o NETFLIX?",     
+
         "gostaria muito saber mais sobre a "+localStorage.getItem("sTV")+" Mas, infelizmente a nossa pesquisa termina por aqui "+
         "agradeço pela tua paciência! "+localStorage.getItem("name")+
         " e para a tua segurança estas conversas não são guardadas, podes atualizar a página e tudo sumirá! obrigada..",
@@ -88,7 +89,7 @@ const get_conversation = (user,bot)=>{
             
             if(bot_response == undefined){
 
-                if(num <= listen.length -1){
+                if(num < listen.length -1){
                     var ls = listen[num += 1]
                     box_div.innerHTML = logo + "<br>"+ "<div class = 'bot_div' >"+ls+ "</div>"
                     box.append(box_div)

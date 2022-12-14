@@ -38,6 +38,10 @@ const bot_learning_response = (quest, _user)=>{
     if(quest == "És de que país?"){
         save_pais()        
     }
+    
+    if(quest == "Qual das personagens que gostas na série de "+localStorage.getItem("serie")+"?" ){
+        save_autor()        
+    }
     if(quest == "Qual é o serviço TV que usas, NetFlix, Youtube? Canal+ ou outros? Escreve-as!" ){
         save_STV()        
     }
@@ -229,6 +233,31 @@ function save_shoping(){
     document.getElementById("sendBtn").style.display = "none"
         btn.addEventListener("click",()=>{
             var getter = document.getElementById("idshoping").value
+            localStorage.setItem("shoping",getter)
+            document.getElementById("sendBtn").style.display = "flex"
+            document.querySelector(".btn-res").style.display = "none"
+            box_div.innerHTML = logo + "<br>"+ "<div class = 'bot_div' >"+localStorage.getItem("name")+" Podemos continuar?</div>"
+            box.append(box_div) 
+            btn_senders("Sim podemos continuar")
+            
+        })
+        box.append(inp)
+        box.append(btn)
+}
+function save_autor(){
+    var box = document.querySelector(".containt-message")
+    var inp = document.createElement("input")
+    var box_div = document.createElement("div")
+    box_div.className = "box_div"
+    var logo = "<img src='./asset/img/log.png'  height='50px'>"
+    inp.setAttribute("id", "idautor")
+    inp.className = "inp-res"
+    var btn = document.createElement("label")
+    btn.className = "btn-res"
+    btn.innerHTML = "Enviar"
+    document.getElementById("sendBtn").style.display = "none"
+        btn.addEventListener("click",()=>{
+            var getter = document.getElementById("idautor").value
             localStorage.setItem("shoping",getter)
             document.getElementById("sendBtn").style.display = "flex"
             document.querySelector(".btn-res").style.display = "none"
