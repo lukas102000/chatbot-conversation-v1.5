@@ -107,8 +107,6 @@ const get_conversation = (user,bot)=>{
                 box.append(box_div)                 
         }
     }
-    document.querySelector("#like").setAttribute("src", "./asset/img/emoji100(2).png")
-    document.querySelector("#btnss").setAttribute("style", "background-color: white")
 }
 const btn_sender = (text)=>{
     var box = document.querySelector(".containt-message")
